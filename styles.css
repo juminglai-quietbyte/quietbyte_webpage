@@ -42,8 +42,8 @@ body {
   background: var(--color-bg);
   background-image:
     radial-gradient(ellipse 80% 50% at 50% 0%, rgba(59, 125, 86, 0.04), transparent),
-    radial-gradient(ellipse 60% 40% at 80% 60%, rgba(212, 167, 106, 0.04), transparent),
-    radial-gradient(ellipse 50% 30% at 20% 80%, rgba(224, 122, 82, 0.03), transparent);
+    radial-gradient(ellipse 60% 40% at 80% 40%, rgba(212, 167, 106, 0.03), transparent),
+    radial-gradient(ellipse 50% 30% at 50% 70%, rgba(59, 125, 86, 0.02), transparent);
   color: var(--color-text);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -242,11 +242,11 @@ body {
 .shape-3 {
   width: 400px;
   height: 400px;
-  background: var(--color-coral);
-  bottom: -5%;
-  left: 20%;
+  background: var(--color-warm);
+  top: 60%;
+  left: 50%;
   animation-delay: -8s;
-  opacity: 0.12;
+  opacity: 0.15;
 }
 
 @keyframes float {
