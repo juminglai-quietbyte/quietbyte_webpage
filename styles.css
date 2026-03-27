@@ -50,9 +50,15 @@ body {
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 40px;
+}
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1400px;
+  }
 }
 
 /* === Navigation === */
@@ -192,9 +198,20 @@ body {
 .hero-subtitle {
   font-size: 1.2rem;
   color: var(--color-text-secondary);
-  max-width: 520px;
+  max-width: 600px;
   margin: 0 auto 44px;
   line-height: 1.7;
+}
+
+@media (min-width: 1600px) {
+  .hero h1 {
+    font-size: 5.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.35rem;
+    max-width: 680px;
+  }
 }
 
 .hero-bg-shapes {
@@ -294,8 +311,7 @@ body {
 .apps-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 24px;
-  max-width: 900px;
+  gap: 28px;
   margin: 0 auto;
 }
 
@@ -520,7 +536,7 @@ body {
 }
 
 .roadmap-timeline {
-  max-width: 640px;
+  max-width: 720px;
   margin: 0 auto;
   position: relative;
   padding-left: 32px;
@@ -643,7 +659,7 @@ body {
   border: 1px solid var(--color-border);
   border-radius: var(--radius-xl);
   padding: 44px;
-  max-width: 640px;
+  max-width: 720px;
   margin: 0 auto;
   box-shadow: var(--shadow-md);
 }
