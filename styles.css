@@ -50,15 +50,9 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1080px;
   margin: 0 auto;
-  padding: 0 40px;
-}
-
-@media (min-width: 1600px) {
-  .container {
-    max-width: 1400px;
-  }
+  padding: 0 24px;
 }
 
 /* === Navigation === */
@@ -203,14 +197,13 @@ body {
   line-height: 1.7;
 }
 
-@media (min-width: 1600px) {
-  .hero h1 {
-    font-size: 5.5rem;
-  }
-
-  .hero-subtitle {
-    font-size: 1.35rem;
-    max-width: 680px;
+/* Large screens — make the background shapes visible and fill the space */
+@media (min-width: 1400px) {
+  body {
+    background-image:
+      radial-gradient(ellipse 60% 50% at 50% 0%, rgba(59, 125, 86, 0.05), transparent),
+      radial-gradient(ellipse 40% 40% at 85% 50%, rgba(212, 167, 106, 0.05), transparent),
+      radial-gradient(ellipse 40% 40% at 15% 70%, rgba(224, 122, 82, 0.04), transparent);
   }
 }
 
@@ -311,7 +304,8 @@ body {
 .apps-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 28px;
+  gap: 24px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -536,7 +530,7 @@ body {
 }
 
 .roadmap-timeline {
-  max-width: 720px;
+  max-width: 640px;
   margin: 0 auto;
   position: relative;
   padding-left: 32px;
@@ -659,7 +653,7 @@ body {
   border: 1px solid var(--color-border);
   border-radius: var(--radius-xl);
   padding: 44px;
-  max-width: 720px;
+  max-width: 640px;
   margin: 0 auto;
   box-shadow: var(--shadow-md);
 }
