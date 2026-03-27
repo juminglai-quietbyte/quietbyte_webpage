@@ -5,9 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QuietByte — Small Apps, Big Impact</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -15,7 +12,7 @@
   <nav class="navbar">
     <div class="container nav-content">
       <a href="#" class="logo">
-        <span class="logo-icon">&#x2B22;</span> QuietByte
+        <span class="logo-icon">&#x1F331;</span> QuietByte
       </a>
       <ul class="nav-links">
         <li><a href="#apps">Apps</a></li>
@@ -28,9 +25,13 @@
   <!-- Hero -->
   <section class="hero">
     <div class="container hero-content">
-      <h1>Small Apps.<br>Big Impact.</h1>
-      <p class="hero-subtitle">We craft focused, lightweight utility apps that do one thing — and do it well. No bloat, no clutter, just tools that fit into your day.</p>
-      <a href="#apps" class="btn btn-primary">Explore Our Apps</a>
+      <div class="hero-badge">Women-Owned &amp; Women-Built App Studio</div>
+      <h1>Small Apps.<br><span class="hero-accent">Big Impact.</span></h1>
+      <p class="hero-subtitle">We craft focused, lightweight apps that do one thing — and do it beautifully. No bloat, no clutter. Just tools that fit into your day.</p>
+      <a href="#apps" class="btn btn-primary">
+        <span>Explore Our Apps</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
     </div>
     <div class="hero-bg-shapes">
       <div class="shape shape-1"></div>
@@ -42,69 +43,93 @@
   <!-- Apps Section -->
   <section id="apps" class="apps-section">
     <div class="container">
-      <h2 class="section-title">Our Apps</h2>
-      <p class="section-subtitle">Each app is designed to be simple, fast, and genuinely useful.</p>
+      <div class="section-header">
+        <div class="section-label">What We've Built</div>
+        <h2 class="section-title">Our Apps</h2>
+        <p class="section-subtitle">Each app is designed to be simple, fast, and genuinely useful.</p>
+      </div>
 
       <div class="apps-grid">
 
-        <!-- Notebook Games -->
-        <div class="app-card featured">
-          <div class="app-icon">
-            <img src="images/notebookgames_icon.png" alt="Notebook Games app icon">
-          </div>
-          <h3>Notebook Games</h3>
-          <p class="app-tagline">Doodle. Play. Relax.</p>
-          <p class="app-description">A nostalgic collection of childhood paper-and-pencil games. Tic Tac Toe, Dots &amp; Boxes, Snake, and Stickman Fight — all drawn on warm notebook paper with pencil-sketch graphics.</p>
-          <ul class="app-features">
-            <li>Tic Tac Toe with 3 AI difficulty levels</li>
-            <li>Dots &amp; Boxes with smart AI opponent</li>
-            <li>Hand-drawn notebook paper aesthetic</li>
-            <li>Offline &bull; No ads in gameplay &bull; No account needed</li>
-          </ul>
-          <div class="app-badges">
-            <span class="app-badge badge-new">New</span>
-            <span class="app-badge badge-free">Free</span>
+        <!-- FreshNest — featured -->
+        <div class="app-card app-card-featured">
+          <div class="app-card-glow"></div>
+          <div class="app-card-inner">
+            <div class="app-header">
+              <div class="app-icon">
+                <img src="images/freshnest_icon.png" alt="FreshNest app icon">
+              </div>
+              <div class="app-badges">
+                <span class="app-badge badge-new">New</span>
+                <span class="app-badge badge-free">Free</span>
+              </div>
+            </div>
+            <h3>FreshNest</h3>
+            <p class="app-tagline">Dinner, Handled.</p>
+            <p class="app-description">A calm dinner companion for busy moms with toddlers. Tonight's dinner is already chosen, adapted for your little one, with a grocery list that writes itself.</p>
+            <ul class="app-features">
+              <li>Tonight's dinner decided before you open the app</li>
+              <li>Every meal adapted for toddlers — soft, low salt</li>
+              <li>Auto-generated grocery list grouped by category</li>
+              <li>Fridge box tracker &amp; weekly prep planner</li>
+              <li>Rescue Mode for tough evenings</li>
+              <li>Bilingual English &amp; Chinese</li>
+            </ul>
+            <div class="app-cta">
+              <span class="app-platform">Available on iOS</span>
+            </div>
           </div>
         </div>
 
-        <!-- FreshNest -->
-        <div class="app-card featured">
-          <div class="app-icon">
-            <img src="images/freshnest_icon.png" alt="FreshNest app icon">
-          </div>
-          <h3>FreshNest</h3>
-          <p class="app-tagline">Dinner, Handled.</p>
-          <p class="app-description">A calm dinner companion for busy moms with toddlers. Tonight's dinner is already chosen, adapted for your little one, with a grocery list that writes itself. 30 days of Chinese home-style meals, bilingual English &amp; Chinese.</p>
-          <ul class="app-features">
-            <li>Tonight's dinner decided before you open the app</li>
-            <li>Every meal adapted for toddlers — soft, low salt, right-sized</li>
-            <li>Auto-generated grocery list grouped by category</li>
-            <li>Fridge box tracker &amp; weekly prep planner</li>
-            <li>Rescue Mode for the nights nothing sounds good</li>
-            <li>Beautiful light &amp; dark mode</li>
-          </ul>
-          <div class="app-badges">
-            <span class="app-badge badge-new">New</span>
-            <span class="app-badge badge-free">Free</span>
+        <!-- Notebook Games -->
+        <div class="app-card">
+          <div class="app-card-inner">
+            <div class="app-header">
+              <div class="app-icon">
+                <img src="images/notebookgames_icon.png" alt="Notebook Games app icon">
+              </div>
+              <div class="app-badges">
+                <span class="app-badge badge-free">Free</span>
+              </div>
+            </div>
+            <h3>Notebook Games</h3>
+            <p class="app-tagline">Doodle. Play. Relax.</p>
+            <p class="app-description">Nostalgic paper-and-pencil games. Tic Tac Toe, Dots &amp; Boxes, Snake — all on warm notebook paper with pencil-sketch graphics.</p>
+            <ul class="app-features">
+              <li>Tic Tac Toe with 3 AI levels</li>
+              <li>Dots &amp; Boxes with smart AI</li>
+              <li>Hand-drawn notebook aesthetic</li>
+              <li>Offline &bull; No ads &bull; No account</li>
+            </ul>
+            <div class="app-cta">
+              <span class="app-platform">Available on iOS</span>
+            </div>
           </div>
         </div>
 
         <!-- Sudoku Garden -->
         <div class="app-card">
-          <div class="app-icon">
-            <img src="images/sudoku-free-icon.png" alt="Sudoku Garden app icon">
-          </div>
-          <h3>Sudoku Garden</h3>
-          <p class="app-tagline">Calm Puzzle</p>
-          <p class="app-description">A calm, distraction-free Sudoku experience with soothing colors and smooth animations. Three difficulty levels, smart pencil marks, intelligent hints, and full statistics.</p>
-          <ul class="app-features">
-            <li>3 difficulty levels with score multipliers</li>
-            <li>Smart pencil marks &amp; auto-conflict detection</li>
-            <li>Beautiful light &amp; dark mode themes</li>
-            <li>Works offline &bull; No tracking &bull; No clutter</li>
-          </ul>
-          <div class="app-badges">
-            <span class="app-badge badge-free">Free</span>
+          <div class="app-card-inner">
+            <div class="app-header">
+              <div class="app-icon">
+                <img src="images/sudoku-free-icon.png" alt="Sudoku Garden app icon">
+              </div>
+              <div class="app-badges">
+                <span class="app-badge badge-free">Free</span>
+              </div>
+            </div>
+            <h3>Sudoku Garden</h3>
+            <p class="app-tagline">Calm Puzzles.</p>
+            <p class="app-description">A calm, distraction-free Sudoku experience with soothing colors. Three difficulty levels, smart pencil marks, and intelligent hints.</p>
+            <ul class="app-features">
+              <li>3 difficulty levels</li>
+              <li>Smart pencil marks &amp; hints</li>
+              <li>Beautiful light &amp; dark mode</li>
+              <li>Offline &bull; No tracking &bull; No clutter</li>
+            </ul>
+            <div class="app-cta">
+              <span class="app-platform">Available on iOS</span>
+            </div>
           </div>
         </div>
 
@@ -112,44 +137,75 @@
     </div>
   </section>
 
+  <!-- Values Strip -->
+  <section class="values-section">
+    <div class="container">
+      <div class="values-grid">
+        <div class="value-item">
+          <span class="value-icon">&#x1F512;</span>
+          <h4>Privacy First</h4>
+          <p>No accounts. No tracking. Your data stays on your device.</p>
+        </div>
+        <div class="value-item">
+          <span class="value-icon">&#x26A1;</span>
+          <h4>Lightweight</h4>
+          <p>Small downloads. Fast launch. No bloat.</p>
+        </div>
+        <div class="value-item">
+          <span class="value-icon">&#x2728;</span>
+          <h4>Crafted with Care</h4>
+          <p>Every pixel considered. Every interaction polished.</p>
+        </div>
+        <div class="value-item">
+          <span class="value-icon">&#x1F310;</span>
+          <h4>Works Offline</h4>
+          <p>No internet required. Your apps work everywhere.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Roadmap Section -->
   <section id="roadmap" class="roadmap-section">
     <div class="container">
-      <h2 class="section-title">What's Coming Next</h2>
-      <p class="section-subtitle">We're always improving. Here's what's on the horizon.</p>
+      <div class="section-header">
+        <div class="section-label">What's Ahead</div>
+        <h2 class="section-title">Roadmap</h2>
+        <p class="section-subtitle">We're always improving. Here's what's on the horizon.</p>
+      </div>
 
       <div class="roadmap-timeline">
 
         <div class="roadmap-phase phase-active">
           <div class="phase-marker">
-            <span class="phase-number">1</span>
+            <span class="phase-dot"></span>
+          </div>
+          <div class="phase-content">
             <span class="phase-status status-live">Live Now</span>
-          </div>
-          <div class="phase-content">
             <h3>Three Apps Launched</h3>
-            <p><strong>Notebook Games</strong> — nostalgic paper-and-pencil mini games. <strong>FreshNest</strong> — dinner planning for busy parents. <strong>Sudoku Garden</strong> — calm, distraction-free puzzles. All free, all offline.</p>
+            <p><strong>FreshNest</strong> — dinner planning for busy parents. <strong>Notebook Games</strong> — nostalgic mini games. <strong>Sudoku Garden</strong> — calm puzzles. All free, all offline, all private.</p>
           </div>
         </div>
 
         <div class="roadmap-phase">
           <div class="phase-marker">
-            <span class="phase-number">2</span>
+            <span class="phase-dot"></span>
+          </div>
+          <div class="phase-content">
             <span class="phase-status status-next">Up Next</span>
-          </div>
-          <div class="phase-content">
-            <h3>Notebook Games Pro</h3>
-            <p>Unlock <strong>Snake</strong> and <strong>Stickman Fight</strong>. Extra notebook themes — graph paper, aged parchment, blackboard. Remove ads.</p>
+            <h3>Smarter Meals &amp; More Games</h3>
+            <p><strong>FreshNest:</strong> Push notifications, more meal variety. <strong>Notebook Games:</strong> Extra themes — graph paper, aged parchment, blackboard.</p>
           </div>
         </div>
 
         <div class="roadmap-phase">
           <div class="phase-marker">
-            <span class="phase-number">3</span>
-            <span class="phase-status status-future">Later</span>
+            <span class="phase-dot"></span>
           </div>
           <div class="phase-content">
+            <span class="phase-status status-future">Later</span>
             <h3>More Cuisines &amp; Family Features</h3>
-            <p><strong>FreshNest:</strong> More cuisine packs (American, Korean, Indian), kid profiles with food preferences, custom recipes, and family sharing. <strong>Sudoku Garden:</strong> Co-op mode, calming music, and a kid-friendly mode with larger grids.</p>
+            <p><strong>FreshNest:</strong> More cuisine packs (American, Korean, Indian), kid profiles, custom recipes, and family sharing. <strong>Sudoku Garden:</strong> Co-op mode, calming music, kid-friendly grids.</p>
           </div>
         </div>
 
@@ -160,8 +216,11 @@
   <!-- Feedback Section -->
   <section id="feedback" class="feedback-section">
     <div class="container">
-      <h2 class="section-title">We'd Love Your Feedback</h2>
-      <p class="section-subtitle">Have a suggestion, found a bug, or just want to say hi? We'd love to hear from you.</p>
+      <div class="section-header">
+        <div class="section-label">Get in Touch</div>
+        <h2 class="section-title">We'd Love Your Feedback</h2>
+        <p class="section-subtitle">Have a suggestion, found a bug, or just want to say hi?</p>
+      </div>
 
       <div class="feedback-card">
         <form id="feedback-form" class="feedback-form">
@@ -179,8 +238,8 @@
             <label for="app-select">Which app?</label>
             <select id="app-select" name="app">
               <option value="general">General / All Apps</option>
-              <option value="notebook-games">Notebook Games</option>
               <option value="freshnest">FreshNest</option>
+              <option value="notebook-games">Notebook Games</option>
               <option value="sudoku-garden">Sudoku Garden</option>
             </select>
           </div>
@@ -188,7 +247,10 @@
             <label for="message">Message</label>
             <textarea id="message" name="message" rows="5" placeholder="Tell us what you think..." required></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Send Feedback</button>
+          <button type="submit" class="btn btn-primary">
+            <span>Send Feedback</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
         </form>
         <div id="form-success" class="form-success hidden">
           <span class="success-icon">&#x2713;</span>
@@ -201,10 +263,10 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer-content">
-      <p class="footer-brand"><span class="logo-icon">&#x2B22;</span> QuietByte</p>
+      <p class="footer-brand"><span class="logo-icon">&#x1F331;</span> QuietByte</p>
       <div class="footer-links">
         <a href="privacy.html">Privacy Policy</a>
-        <span style="color: var(--color-text-muted);">&bull;</span>
+        <span class="footer-dot">&bull;</span>
         <span class="footer-copy">&copy; 2026 QuietByte</span>
       </div>
     </div>
