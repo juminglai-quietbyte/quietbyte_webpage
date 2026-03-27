@@ -41,9 +41,19 @@ body {
   font-family: var(--font);
   background: var(--color-bg);
   background-image:
-    radial-gradient(ellipse 80% 50% at 50% 0%, rgba(59, 125, 86, 0.04), transparent),
-    radial-gradient(ellipse 60% 40% at 80% 40%, rgba(212, 167, 106, 0.03), transparent),
-    radial-gradient(ellipse 50% 30% at 50% 70%, rgba(59, 125, 86, 0.02), transparent);
+    /* Dot grid pattern */
+    radial-gradient(circle, rgba(59, 125, 86, 0.06) 1px, transparent 1px),
+    /* Warm color washes */
+    radial-gradient(ellipse 80% 50% at 50% 0%, rgba(59, 125, 86, 0.05), transparent),
+    radial-gradient(ellipse 60% 40% at 80% 40%, rgba(212, 167, 106, 0.04), transparent),
+    radial-gradient(ellipse 50% 30% at 20% 60%, rgba(59, 125, 86, 0.03), transparent),
+    radial-gradient(ellipse 50% 30% at 70% 80%, rgba(212, 167, 106, 0.03), transparent);
+  background-size:
+    24px 24px,
+    100% 100%,
+    100% 100%,
+    100% 100%,
+    100% 100%;
   color: var(--color-text);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -192,7 +202,14 @@ body {
   position: relative;
   z-index: 2;
   text-align: center;
-  padding: 100px 0 80px;
+  padding: 100px 40px 80px;
+  max-width: 800px;
+  margin: 0 auto;
+  background: rgba(245, 244, 239, 0.5);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  border-radius: var(--radius-xl);
+  border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .hero-badge {
@@ -272,8 +289,7 @@ body {
 .shape {
   position: absolute;
   border-radius: 50%;
-  filter: blur(120px);
-  opacity: 0.25;
+  filter: blur(100px);
   animation: float 12s ease-in-out infinite;
 }
 
@@ -281,27 +297,29 @@ body {
   width: 600px;
   height: 600px;
   background: var(--color-primary);
-  top: 5%;
-  left: -15%;
+  top: 0%;
+  left: -10%;
+  opacity: 0.35;
 }
 
 .shape-2 {
   width: 500px;
   height: 500px;
   background: var(--color-warm);
-  top: 30%;
-  right: -15%;
+  top: 20%;
+  right: -10%;
   animation-delay: -4s;
+  opacity: 0.3;
 }
 
 .shape-3 {
-  width: 400px;
-  height: 400px;
-  background: var(--color-warm);
-  top: 60%;
-  left: 50%;
+  width: 450px;
+  height: 450px;
+  background: var(--color-primary);
+  bottom: 0%;
+  left: 40%;
   animation-delay: -8s;
-  opacity: 0.15;
+  opacity: 0.2;
 }
 
 @keyframes float {
@@ -527,7 +545,10 @@ body {
 /* === Values Section === */
 .values-section {
   padding: 80px 0;
-  background: var(--color-bg-warm);
+  background:
+    radial-gradient(ellipse 50% 80% at 30% 50%, rgba(59, 125, 86, 0.06), transparent),
+    radial-gradient(ellipse 50% 80% at 70% 50%, rgba(212, 167, 106, 0.05), transparent),
+    var(--color-bg-warm);
 }
 
 .values-grid {
@@ -540,8 +561,10 @@ body {
   text-align: center;
   padding: 32px 20px;
   border-radius: var(--radius-lg);
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
   box-shadow: var(--shadow-sm);
   transition: all 0.3s;
 }
