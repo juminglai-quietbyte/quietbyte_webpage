@@ -40,6 +40,10 @@ html {
 body {
   font-family: var(--font);
   background: var(--color-bg);
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% 0%, rgba(59, 125, 86, 0.04), transparent),
+    radial-gradient(ellipse 60% 40% at 80% 60%, rgba(212, 167, 106, 0.04), transparent),
+    radial-gradient(ellipse 50% 30% at 20% 80%, rgba(224, 122, 82, 0.03), transparent);
   color: var(--color-text);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -274,6 +278,17 @@ body {
 /* === Apps Section === */
 .apps-section {
   padding: 120px 0;
+  position: relative;
+}
+
+.apps-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-border), transparent);
 }
 
 .apps-grid {
@@ -501,6 +516,7 @@ body {
 /* === Roadmap Section === */
 .roadmap-section {
   padding: 120px 0;
+  background: linear-gradient(180deg, var(--color-bg) 0%, rgba(59, 125, 86, 0.03) 50%, var(--color-bg) 100%);
 }
 
 .roadmap-timeline {
