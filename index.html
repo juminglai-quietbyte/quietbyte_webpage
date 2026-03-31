@@ -14,292 +14,218 @@
   <!-- Navigation -->
   <nav class="navbar">
     <div class="container nav-content">
-      <a href="#" class="logo">
+      <a href="/" class="logo">
         <img src="images/logo.svg" alt="QuietByte" class="logo-img" height="36">
       </a>
-      <ul class="nav-links">
-        <li><a href="#apps">Apps</a></li>
-        <li><a href="#roadmap">Roadmap</a></li>
-        <li><a href="#feedback">Feedback</a></li>
-      </ul>
+      <div class="nav-links">
+        <a href="#apps">Apps</a>
+        <a href="#about">About</a>
+        <a href="mailto:info@quietbyte.io">Contact</a>
+      </div>
     </div>
   </nav>
 
   <!-- Hero -->
   <section class="hero">
-    <div class="container hero-content">
-      <img src="images/logo.svg" alt="QuietByte" class="hero-logo">
-      <div class="hero-badge">Women-Owned &amp; Women-Built App Studio</div>
-      <h1>Small Apps.<br><span class="hero-accent">Big Impact.</span></h1>
-      <p class="hero-subtitle">We craft focused, lightweight apps that do one thing — and do it beautifully. No bloat, no clutter. Just tools that fit into your day.</p>
-      <a href="#apps" class="btn btn-primary">
-        <span>Explore Our Apps</span>
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
-    </div>
-    <div class="hero-bg-shapes">
-      <div class="shape shape-1"></div>
-      <div class="shape shape-2"></div>
-      <div class="shape shape-3"></div>
+    <div class="hero-gradient"></div>
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <img src="images/logo.svg" alt="QuietByte Logo" class="hero-logo">
+        <h1>Small Apps. Big Impact.</h1>
+        <p class="hero-subtitle">Thoughtfully crafted iOS apps that solve real problems with elegance and simplicity</p>
+
+        <!-- Badge -->
+        <div class="hero-badge">
+          <svg class="badge-heart" width="16" height="16" viewBox="0 0 24 24" fill="#2AA6A0" stroke="#2AA6A0" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          <span>Women-Owned &amp; Women-Built</span>
+        </div>
+
+        <!-- Brand Facts Row -->
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-number">3 Apps</div>
+            <div class="stat-label">Live on App Store</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <div class="stat-number">Privacy First</div>
+            <div class="stat-label">No Tracking</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <div class="stat-number">Seattle</div>
+            <div class="stat-label">Built in USA</div>
+          </div>
+        </div>
+
+        <a href="#apps" class="btn btn-primary">
+          <span>Explore Our Apps</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 9l-7 7-7-7"/></svg>
+        </a>
+      </div>
     </div>
   </section>
 
   <!-- Apps Section -->
   <section id="apps" class="apps-section">
+    <div class="apps-gradient"></div>
     <div class="container">
       <div class="section-header">
-        <div class="section-label">What We've Built</div>
+        <div class="section-label">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.09997 22C7.78997 22.05 6.79997 20.68 5.95997 19.47C4.24997 17 2.93997 12.45 4.69997 9.39C5.56997 7.87 7.12997 6.91 8.81997 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/></svg>
+          <span>Available Now on App Store</span>
+        </div>
         <h2 class="section-title">Our Apps</h2>
-        <p class="section-subtitle">Each app is designed to be simple, fast, and genuinely useful.</p>
+        <p class="section-subtitle">Simple, focused apps that do one thing exceptionally well</p>
       </div>
 
+      <!-- Category Filter -->
+      <div class="filter-bar">
+        <div class="filter-pills">
+          <button class="filter-pill active" data-category="all">All (3)</button>
+          <button class="filter-pill" data-category="games">Games (2)</button>
+          <button class="filter-pill" data-category="productivity">Productivity (1)</button>
+        </div>
+      </div>
+
+      <!-- Apps Grid -->
       <div class="apps-grid">
 
-        <!-- FreshNest — Live -->
-        <div class="app-card app-card-featured">
-          <div class="app-card-glow"></div>
-          <div class="app-card-inner">
-            <div class="app-header">
-              <div class="app-icon">
-                <img src="images/freshnest_icon.png" alt="FreshNest app icon">
-              </div>
-              <div class="app-badges">
-                <span class="app-badge badge-free">Free</span>
-              </div>
-            </div>
-            <h3>FreshNest</h3>
-            <p class="app-tagline">Dinner, Handled.</p>
-            <p class="app-description">A calm dinner companion for busy moms with toddlers. Tonight's dinner is already chosen, adapted for your little one, with a grocery list that writes itself.</p>
-            <ul class="app-features">
-              <li>Tonight's dinner decided before you open the app</li>
-              <li>Every meal adapted for toddlers — soft, low salt</li>
-              <li>Auto-generated grocery list grouped by category</li>
-              <li>Fridge box tracker &amp; weekly prep planner</li>
-              <li>Rescue Mode for tough evenings</li>
-              <li>Bilingual English &amp; Chinese</li>
-            </ul>
-            <div class="app-cta">
-              <a href="https://apps.apple.com/us/app/freshnest/id6761255486" class="btn-download" target="_blank" rel="noopener">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M11.182 4.398c-.554-.328-1.146-.398-1.782-.398-.636 0-1.228.07-1.782.398C7.064 4.726 6.6 5.2 6.6 5.9c0 .7.464 1.174 1.018 1.502.554.328 1.146.398 1.782.398.636 0 1.228-.07 1.782-.398C11.736 7.074 12.2 6.6 12.2 5.9c0-.7-.464-1.174-1.018-1.502z"/><path d="M8 0C3.582 0 0 3.582 0 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zm2.4 11.5H5.6L8 6.5l2.4 5z"/></svg>
-                Download on App Store
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Notebook Games — Live -->
-        <div class="app-card">
-          <div class="app-card-inner">
-            <div class="app-header">
-              <div class="app-icon">
-                <img src="images/notebookgames_icon.png" alt="Notebook Games app icon">
-              </div>
-              <div class="app-badges">
-                <span class="app-badge badge-free">Free</span>
-              </div>
-            </div>
-            <h3>Notebook Games</h3>
-            <p class="app-tagline">Doodle. Play. Relax.</p>
-            <p class="app-description">Nostalgic paper-and-pencil games. Tic Tac Toe, Dots &amp; Boxes, Snake — all on warm notebook paper with pencil-sketch graphics.</p>
-            <ul class="app-features">
-              <li>Tic Tac Toe with 3 AI levels</li>
-              <li>Dots &amp; Boxes with smart AI</li>
-              <li>Hand-drawn notebook aesthetic</li>
-              <li>Offline &bull; No ads &bull; No account</li>
-            </ul>
-            <div class="app-cta">
-              <a href="https://apps.apple.com/us/app/notebook-games/id6761277770" class="btn-download" target="_blank" rel="noopener">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M11.182 4.398c-.554-.328-1.146-.398-1.782-.398-.636 0-1.228.07-1.782.398C7.064 4.726 6.6 5.2 6.6 5.9c0 .7.464 1.174 1.018 1.502.554.328 1.146.398 1.782.398.636 0 1.228-.07 1.782-.398C11.736 7.074 12.2 6.6 12.2 5.9c0-.7-.464-1.174-1.018-1.502z"/><path d="M8 0C3.582 0 0 3.582 0 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zm2.4 11.5H5.6L8 6.5l2.4 5z"/></svg>
-                Download on App Store
-              </a>
-            </div>
-          </div>
-        </div>
-
         <!-- Sudoku Garden -->
-        <div class="app-card">
+        <div class="app-card" data-category="games">
           <div class="app-card-inner">
-            <div class="app-header">
-              <div class="app-icon">
-                <img src="images/sudoku-free-icon.png" alt="Sudoku Garden app icon">
-              </div>
-              <div class="app-badges">
-                <span class="app-badge badge-free">Free</span>
-              </div>
+            <div class="app-status">Live</div>
+            <div class="app-icon-wrap">
+              <img src="images/sudoku-free-icon.png" alt="Sudoku Garden" class="app-icon-img">
             </div>
-            <h3>Sudoku Garden</h3>
-            <p class="app-tagline">Calm Puzzles.</p>
-            <p class="app-description">A calm, distraction-free Sudoku experience with soothing colors. Three difficulty levels, smart pencil marks, and intelligent hints.</p>
-            <ul class="app-features">
-              <li>3 difficulty levels</li>
-              <li>Smart pencil marks &amp; hints</li>
-              <li>Beautiful light &amp; dark mode</li>
-              <li>Offline &bull; No tracking &bull; No clutter</li>
-            </ul>
-            <div class="app-cta">
-              <a href="https://apps.apple.com/us/app/suduku-garden/id6760734856" class="btn-download" target="_blank" rel="noopener">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M11.182 4.398c-.554-.328-1.146-.398-1.782-.398-.636 0-1.228.07-1.782.398C7.064 4.726 6.6 5.2 6.6 5.9c0 .7.464 1.174 1.018 1.502.554.328 1.146.398 1.782.398.636 0 1.228-.07 1.782-.398C11.736 7.074 12.2 6.6 12.2 5.9c0-.7-.464-1.174-1.018-1.502z"/><path d="M8 0C3.582 0 0 3.582 0 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zm2.4 11.5H5.6L8 6.5l2.4 5z"/></svg>
-                Download on App Store
+            <h3 class="app-name">Sudoku Garden</h3>
+            <p class="app-description">Beautiful sudoku puzzles in a peaceful garden setting. Relax your mind while sharpening your logic skills.</p>
+            <div class="app-features">
+              <span class="feature-tag">Daily Puzzles</span>
+              <span class="feature-tag">4 Difficulty Levels</span>
+              <span class="feature-tag">Relaxing Themes</span>
+            </div>
+            <div class="app-footer">
+              <a href="https://apps.apple.com/us/app/suduku-garden/id6760734856" target="_blank" rel="noopener noreferrer" class="btn-download">
+                <span>Download</span>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.09997 22C7.78997 22.05 6.79997 20.68 5.95997 19.47C4.24997 17 2.93997 12.45 4.69997 9.39C5.56997 7.87 7.12997 6.91 8.81997 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/></svg>
               </a>
             </div>
           </div>
         </div>
 
-        <!-- Don't Open Yet -->
-        <div class="app-card">
+        <!-- FreshNest -->
+        <div class="app-card" data-category="productivity">
           <div class="app-card-inner">
-            <div class="app-header">
-              <div class="app-icon app-icon-placeholder" style="background: linear-gradient(135deg, #4ECDC4, #2BA8A0); display: flex; align-items: center; justify-content: center; border-radius: 20px; width: 60px; height: 60px;">
-                <span style="font-size: 28px;">⏸</span>
-              </div>
-              <div class="app-badges">
-                <span class="app-badge badge-soon">Coming Soon</span>
-              </div>
+            <div class="app-status">Live</div>
+            <div class="app-icon-wrap">
+              <img src="images/freshnest_icon.png" alt="FreshNest" class="app-icon-img">
             </div>
-            <h3>Don't Open Yet</h3>
-            <p class="app-tagline">Pause Before You Scroll.</p>
-            <p class="app-description">A mindful app timer that adds intentional friction before opening distracting apps. Choose your apps, set a countdown, and build healthier screen time habits — no blocking, just a gentle pause.</p>
-            <ul class="app-features">
-              <li>Select apps you want to be mindful about</li>
-              <li>5–30 minute countdown before apps open</li>
-              <li>Track your daily streaks and stats</li>
-              <li>Privacy first — all data stays on device</li>
-            </ul>
-            <div class="app-cta">
-              <span class="app-platform">Available on iOS</span>
+            <h3 class="app-name">FreshNest</h3>
+            <p class="app-description">Smart fridge management that helps you reduce food waste and save money with intelligent expiry tracking.</p>
+            <div class="app-features">
+              <span class="feature-tag">Smart Alerts</span>
+              <span class="feature-tag">Food Database</span>
+              <span class="feature-tag">Shopping Lists</span>
+            </div>
+            <div class="app-footer">
+              <a href="https://apps.apple.com/us/app/freshnest/id6761255486" target="_blank" rel="noopener noreferrer" class="btn-download">
+                <span>Download</span>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.09997 22C7.78997 22.05 6.79997 20.68 5.95997 19.47C4.24997 17 2.93997 12.45 4.69997 9.39C5.56997 7.87 7.12997 6.91 8.81997 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/></svg>
+              </a>
             </div>
           </div>
         </div>
 
-        <!-- More apps coming soon -->
+        <!-- Notebook Games -->
+        <div class="app-card" data-category="games">
+          <div class="app-card-inner">
+            <div class="app-status">Live</div>
+            <div class="app-icon-wrap">
+              <img src="images/notebookgames_icon.png" alt="Notebook Games" class="app-icon-img">
+            </div>
+            <h3 class="app-name">Notebook Games</h3>
+            <p class="app-description">Classic paper-and-pencil games reimagined with a beautiful notebook aesthetic and smooth gameplay.</p>
+            <div class="app-features">
+              <span class="feature-tag">5 Classic Games</span>
+              <span class="feature-tag">Multiplayer</span>
+              <span class="feature-tag">Offline Play</span>
+            </div>
+            <div class="app-footer">
+              <a href="https://apps.apple.com/us/app/notebook-games/id6761277770" target="_blank" rel="noopener noreferrer" class="btn-download">
+                <span>Download</span>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.09997 22C7.78997 22.05 6.79997 20.68 5.95997 19.47C4.24997 17 2.93997 12.45 4.69997 9.39C5.56997 7.87 7.12997 6.91 8.81997 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
 
+      </div>
+
+      <!-- Feedback CTA -->
+      <div class="feedback-cta">
+        <div class="feedback-icon">
+          <!-- MessageCircle icon -->
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2AA6A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <h3>We'd Love Your Feedback</h3>
+        <p>Your thoughts help us build better apps. Share your experience, request features, or just say hello.</p>
+        <a href="mailto:info@quietbyte.io?subject=App Feedback" class="btn btn-primary">
+          <span>Send Feedback</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- Values Strip -->
-  <section class="values-section">
+  <!-- Philosophy / About -->
+  <section id="about" class="philosophy-section">
+    <div class="philosophy-dots"></div>
     <div class="container">
+      <div class="section-header">
+        <h2 class="section-title section-title-lg">Apps that respect your time</h2>
+        <p class="section-subtitle section-subtitle-lg">In a world of overwhelming technology, we build apps that solve real problems with elegance and simplicity.</p>
+      </div>
+
       <div class="values-grid">
-        <div class="value-item">
-          <span class="value-icon">&#x1F512;</span>
-          <h4>Privacy First</h4>
-          <p>No accounts. No tracking. Your data stays on your device.</p>
+        <div class="value-card">
+          <div class="value-icon-wrap">
+            <!-- Shield icon -->
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2AA6A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Privacy First</h3>
+          <p class="value-desc">Your data belongs to you. We don't track, collect, or sell your information. Ever.</p>
         </div>
-        <div class="value-item">
-          <span class="value-icon">&#x26A1;</span>
-          <h4>Lightweight</h4>
-          <p>Small downloads. Fast launch. No bloat.</p>
+        <div class="value-card">
+          <div class="value-icon-wrap">
+            <!-- Sparkles icon -->
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2AA6A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.912 5.813a2 2 0 0 0 1.275 1.275L21 12l-5.813 1.912a2 2 0 0 0-1.275 1.275L12 21l-1.912-5.813a2 2 0 0 0-1.275-1.275L3 12l5.813-1.912a2 2 0 0 0 1.275-1.275L12 3z"/></svg>
+          </div>
+          <h3>Simple &amp; Focused</h3>
+          <p class="value-desc">Each app does one thing exceptionally well. No bloat, no distractions, just clarity.</p>
         </div>
-        <div class="value-item">
-          <span class="value-icon">&#x2728;</span>
-          <h4>Crafted with Care</h4>
-          <p>Every pixel considered. Every interaction polished.</p>
-        </div>
-        <div class="value-item">
-          <span class="value-icon">&#x1F310;</span>
-          <h4>Works Offline</h4>
-          <p>No internet required. Your apps work everywhere.</p>
+        <div class="value-card">
+          <div class="value-icon-wrap">
+            <!-- Smartphone icon -->
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2AA6A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+          </div>
+          <h3>Native iOS Excellence</h3>
+          <p class="value-desc">Built specifically for iPhone and iPad with Apple's best design practices and performance.</p>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Roadmap Section -->
-  <section id="roadmap" class="roadmap-section">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-label">What's Ahead</div>
-        <h2 class="section-title">Roadmap</h2>
-        <p class="section-subtitle">We're always improving. Here's what's on the horizon.</p>
-      </div>
-
-      <div class="roadmap-timeline">
-
-        <div class="roadmap-phase phase-active">
-          <div class="phase-marker">
-            <span class="phase-dot"></span>
-          </div>
-          <div class="phase-content">
-            <span class="phase-status status-live">Live Now</span>
-            <h3>Three Apps Launched</h3>
-            <p><strong>FreshNest</strong> — dinner planning for busy parents. <strong>Notebook Games</strong> — nostalgic mini games. <strong>Sudoku Garden</strong> — calm puzzles. All free, all offline, all private.</p>
-          </div>
+      <!-- About Box -->
+      <div class="about-box">
+        <div class="about-badge">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#2AA6A0" stroke="#2AA6A0" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          <span>Women-Owned &amp; Women-Built</span>
         </div>
-
-        <div class="roadmap-phase">
-          <div class="phase-marker">
-            <span class="phase-dot"></span>
-          </div>
-          <div class="phase-content">
-            <span class="phase-status status-next">Up Next</span>
-            <h3>More Apps &amp; Features</h3>
-            <p><strong>FreshNest:</strong> Push notifications, more meal variety &amp; cuisine packs. <strong>Notebook Games:</strong> Extra themes — graph paper, aged parchment, blackboard. Plus new apps coming soon — focused on family, creativity, and calm.</p>
-          </div>
-        </div>
-
-        <div class="roadmap-phase">
-          <div class="phase-marker">
-            <span class="phase-dot"></span>
-          </div>
-          <div class="phase-content">
-            <span class="phase-status status-future">Later</span>
-            <h3>Family Ecosystem &amp; New Apps</h3>
-            <p><strong>FreshNest:</strong> Kid profiles, custom recipes, and family sharing. <strong>Sudoku Garden:</strong> Co-op mode, calming music, kid-friendly grids. More apps in the works — focused on family, creativity, and calm.</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Feedback Section -->
-  <section id="feedback" class="feedback-section">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-label">Get in Touch</div>
-        <h2 class="section-title">We'd Love Your Feedback</h2>
-        <p class="section-subtitle">Have a suggestion, found a bug, or just want to say hi?</p>
-      </div>
-
-      <div class="feedback-card">
-        <form id="feedback-form" class="feedback-form">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="name">Name <span class="optional">(optional)</span></label>
-              <input type="text" id="name" name="name" placeholder="Your name">
-            </div>
-            <div class="form-group">
-              <label for="email">Email <span class="optional">(optional)</span></label>
-              <input type="email" id="email" name="email" placeholder="you@example.com">
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="app-select">Which app?</label>
-            <select id="app-select" name="app">
-              <option value="general">General / All Apps</option>
-              <option value="freshnest">FreshNest</option>
-              <option value="notebook-games">Notebook Games</option>
-              <option value="sudoku-garden">Sudoku Garden</option>
-              <option value="kid-said-what">Kid Said What? / Tiny Together</option>
-              <option value="daily-me">Daily Me</option>
-              <option value="retrofocus">RetroFocus</option>
-              <option value="dont-open-yet">Don't Open Yet</option>
-              <option value="storyloom">StoryLoom</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Tell us what you think..." required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">
-            <span>Send Feedback</span>
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </button>
-        </form>
-        <div id="form-success" class="form-success hidden">
-          <span class="success-icon">&#x2713;</span>
-          <p>Thanks for your feedback! We'll take a look.</p>
+        <h3>Building with Intention</h3>
+        <p>QuietByte is an independent iOS app studio founded and built by women. We're proud to contribute to a more diverse and inclusive tech industry, one thoughtful app at a time.</p>
+        <div class="about-meta">
+          <span>Est. 2025</span>
+          <span class="meta-dot"></span>
+          <span>Seattle, WA</span>
         </div>
       </div>
     </div>
@@ -307,12 +233,34 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="container footer-content">
-      <p class="footer-brand"><span class="logo-icon">&#x1F331;</span> QuietByte</p>
-      <div class="footer-links">
-        <a href="privacy.html">Privacy Policy</a>
-        <span class="footer-dot">&bull;</span>
-        <span class="footer-copy">&copy; 2026 QuietByte</span>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>QuietByte</h4>
+          <p class="footer-brand-desc">Building calm, focused iOS apps that do one thing well.</p>
+          <div class="footer-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#2AA6A0" stroke="#2AA6A0" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            <span>Women-Owned</span>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#apps">Our Apps</a></li>
+            <li><a href="#about">About Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal &amp; Contact</h4>
+          <ul class="footer-links">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="mailto:info@quietbyte.io">info@quietbyte.io</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 QuietByte. All rights reserved.</span>
+        <span class="footer-made">Made with care in Seattle &#127794;</span>
       </div>
     </div>
   </footer>

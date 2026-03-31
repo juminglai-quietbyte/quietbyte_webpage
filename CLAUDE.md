@@ -112,12 +112,17 @@ border-radius: var(--radius-lg);
 - ChoreQuest (Coming Soon, Free + $2.99 Pro)
 
 IMPORTANT: Don't show pricing/monetization details on the public website (CLAUDE.md rule).
+IMPORTANT: Never use fake or unverified metrics (download counts, review counts, star ratings, testimonials). Only show stats that are real and verifiable on the App Store. FTC Consumer Review Rule (2024) prohibits fabricated metrics — fines up to $53K per violation.
+
+## Contact
+- Support email: info@quietbyte.io (use this on the website for all contact/support links)
 
 ## Asset Handling
 - IMPORTANT: If Figma MCP returns localhost source for an image, use directly
 - IMPORTANT: DO NOT add icon packages — all assets come from Figma payload or images/ folder
 - Store downloaded assets in `images/`
 - App icons should be PNG, ~120x120px for display
+- IMPORTANT: Every app card MUST use the app's actual icon from `images/`. Never use emoji or placeholder icons. If an app icon is missing from the images/ folder, ask the user before proceeding.
 
 ## Anti-Patterns
 - No decorative gradients or mesh backgrounds
