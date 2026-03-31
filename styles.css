@@ -208,6 +208,12 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
+.hero-logo {
+  width: 240px;
+  height: auto;
+  margin-bottom: 32px;
+}
+
 .hero-badge {
   display: inline-block;
   padding: 8px 20px;
