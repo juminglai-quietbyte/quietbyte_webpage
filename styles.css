@@ -393,6 +393,24 @@ body {
   letter-spacing: 0.03em;
 }
 
+.app-status.status-coming {
+  background: rgba(255, 149, 0, 0.1);
+  color: #CC7700;
+}
+
+.btn-coming-soon {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 24px;
+  background: var(--color-text-30);
+  color: #fff;
+  border-radius: var(--radius-pill);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
 .app-icon-wrap { margin-bottom: 24px; }
 
 .app-icon-img {
