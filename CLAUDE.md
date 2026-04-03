@@ -104,7 +104,7 @@ border-radius: var(--radius-lg);
 7. **Footer** — Logo + Privacy Policy + © 2026
 
 ## Apps in Portfolio
-- FreshNest (Live, Free)
+- MyFamilyMeal (Live, Free)
 - Notebook Games (Live, Free)
 - Sudoku Garden (Live, Free)
 - DataPace (Coming Soon, Free + $3.99 Pro)
