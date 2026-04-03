@@ -108,7 +108,7 @@ border-radius: var(--radius-lg);
 - Notebook Games (Live, Free)
 - Sudoku Garden (Live, Free)
 - DataPace (Coming Soon, Free + $3.99 Pro)
-- SeattleNest (Coming Soon, Free)
+- SeattleHub (Coming Soon, Free)
 - ChoreQuest (Coming Soon, Free + $2.99 Pro)
 
 IMPORTANT: Don't show pricing/monetization details on the public website (CLAUDE.md rule).
