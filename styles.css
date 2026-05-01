@@ -530,6 +530,14 @@ body {
   font-weight: 500;
 }
 
+/* App Disclaimer */
+.app-disclaimer {
+  font-size: 11px;
+  line-height: 1.4;
+  color: var(--color-text-40);
+  margin-top: 8px;
+}
+
 /* App Card Footer */
 .app-footer {
   display: flex;
